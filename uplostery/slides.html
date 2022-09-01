@@ -1,0 +1,221 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Verdana, sans-serif;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+    /* Slideshow container */
+    
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    /* Caption text */
+    
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    /* Number text (1/3 etc) */
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    /* The dots/bullets/indicators */
+    
+    .dot {
+        height: 7px;
+        width: 7px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active {
+        background-color: #717171;
+    }
+    /* Fading animation */
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /* On smaller screens, decrease text size */
+    
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px
+        }
+    }
+    
+    h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: tomato;
+    }
+    
+    h3 {
+        color: tomato;
+    }
+    
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+</style>
+
+
+<body>
+
+    <h1>About US:</h1>
+
+    <p>Mashavhela upholstery has been operating for more than 5 years in the industry,<br> Started as a small family business based in Alexander 16<sub>th</sub> street in the north of johannessburg and a branch Limpopo</p>
+    <br></br>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="work1.jpg" style="width:110%" height="95%">
+        </div>
+        <div class="mySlides fade">
+
+
+            <img src="Upholstery-101-Tuffet-1080x1080-WeAllSew-blog-025.jpeg" style="width:100%" height="80%" class="">
+        </div>
+
+        <div class="mySlides fade">
+
+
+            <img src="sofa.jpg" style="width:110%" height="100%">
+        </div>
+
+        <div class="mySlides fade">
+
+
+            <img src="work7.png" style="width:100%" height="">
+
+        </div>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <br></br>
+    <br></br>
+
+    <h3>Our vision</h3>
+    <p>Our vision is to do our work with dedication and earnesty of creating work above your expectations to meet your hearts desires and to ensure ensure that we make yoour Home a place of comforbility and a combinaytion of art and beauty offering an escape
+        from the world, making your diningroom the best place that anyone could ever admire to be inasmuch as they would love be at.
+    </p>
+
+    <br>
+    <br>
+    </br>
+
+
+</body>
+<h3>
+
+</h3>
+<script>
+    var slideIndex = 0;
+
+
+
+    function showSlides() {
+
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+
+        for (i = 0; i < slides.length; i++) {
+
+            slides[i].style.display = "none";
+
+        }
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+
+            slideIndex = 1;
+
+        }
+
+        for (i = 0; i < dots.length; i++) {
+
+            dots[i].className = dots[i].className.replace(" active", "");
+
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        dots[slideIndex - 1].className += " active";
+
+        setTimeout(showSlides, 7000); // Change image every 2 seconds
+
+    }
+    showSlides();
+</script>
+
+</html>

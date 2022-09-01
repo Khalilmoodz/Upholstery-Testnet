@@ -1,0 +1,461 @@
+<html>
+
+<head>
+    <link rel="style" href="css/tables.css" type="text/css">
+    <script src="js/tables.js">
+    </script>
+
+
+
+</head>
+<style>
+    .container {
+        display: block;
+        cursor: pointer;
+        border-left: 50px;
+        position: static;
+        margin-left: 220px;
+    }
+    
+    .bar1 {
+        width: 50px;
+        height: 5px;
+        background-color: black;
+        margin: 9px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    
+    .bar2 {
+        width: 50px;
+        height: 5px;
+        background-color: black;
+        margin: 9px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    
+    .bar3 {
+        width: 50px;
+        height: 5px;
+        background-color: black;
+        margin: 9px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    
+    .bar4 {
+        width: 100px;
+        height: 82px;
+        cursor: pointer;
+    }
+    
+    .change .bar1 {
+        transform: rotate(-45deg) translate(7px, 19px);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        transform: rotate(45deg) translate(0px);
+    }
+    
+    me {
+        display: none;
+    }
+    
+    .topnav {
+        background-color: black;
+        overflow: hidden;
+        width: 0px;
+        height: 100%;
+        display: inline-block;
+        position: fixed;
+        z-index: 1;
+        text-align: top;
+    }
+    
+    .topnav a {
+        float: down;
+        color: #DAA520;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 18px;
+        font-family: Arial, sans Helvetica-serif;
+        text-decoration: none;
+        height: 200%;
+    }
+    
+    .topnav a:hover {
+        color: white;
+        width: 1850px;
+        height: 100%;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .topnav a.active {
+        background-color: ;
+        color: #DAA520;
+        text-decoration: ;
+        padding: 51px;
+        text-align: down;
+        overflow: hidden;
+        position: relative;
+        height: 200%;
+    }
+    
+    img {
+        size: 50px;
+        height: 150px;
+        width: 229px;
+        border-radius: 15px;
+    }
+    
+    .sidenav a.closebtn {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 25px;
+        font-size: 40px;
+        margin-left: 50px;
+    }
+    
+    .p2 {
+        width: 1100px;
+        height: 350px;
+    }
+    
+    .card {
+        width: 200px;
+        height: 230px;
+        display: inline-block;
+        border-radius: 15px 25px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    
+    .card1 {
+        background-image: url('foam.jpg');
+        display: show;
+    }
+    
+    .card2 {
+        background-image: url('repairs.png');
+        background-size: 100% 100%;
+        display: show;
+        margin-left: 170px;
+    }
+    
+    .card3 {
+        background-image: url('redesign.jpg');
+        margin-left: 190px;
+        display: show;
+    }
+    
+    .L1 {
+        margin-left: 190px;
+    }
+    
+    .L2 {
+        margin-left: 170px;
+    }
+    
+    .L3 {
+        margin-left: 10 px;
+    }
+    
+    .card:hover {
+        transform: translateY(-20px);
+    }
+    
+    .t2 {
+        margin-left: 100px;
+    }
+    
+    .icon1 {
+        margin-left: 20px;
+    }
+    
+    .icon2 {
+        margin-left: 150px;
+    }
+    
+    .icon3 {
+        margin-left: 170px;
+    }
+    
+    .icon4 {
+        margin-left: 180px;
+    }
+    
+    .icon5 {
+        margin-left: 185px;
+    }
+    
+    .icon6 {
+        margin-left: 250px;
+    }
+    
+    .contact {
+        width: 54px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    
+    .alter {
+        width: 54px;
+        height: 45px;
+    }
+    
+    .location {
+        width: 54px;
+        height: 45px;
+    }
+    
+    .Making {
+        width: 54px;
+        height: 45px;
+    }
+    
+    .thumbs {
+        width: 54px;
+        height: 45px;
+    }
+    
+    .credit {
+        width: 54px;
+        height: 45px;
+        letter-spacing: 5px 3px;
+        word-spacing: 10px;
+    }
+    
+    h3 {
+        color: lightblue;
+    }
+    
+    p {
+        color: rgb(139, 128, 128);
+        display: block;
+        font-family: Harlow solid italic;
+        text-indent: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        word-spacing: 7px;
+        font-size: 18px 5px 10px;
+        background-color: lightpink;
+        border-radius: 20px 5px;
+    }
+    
+    h1 {
+        color: tomato;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    h5 {
+        color: SlateBlue;
+        margin-left: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;
+        margin-bottom: -700px;
+        padding: 50px;
+    }
+    
+    .foot {
+        margin-right: ;
+        height: 10px;
+        margin-bottom: -700px;
+        padding: 50px;
+        right: 100px;
+        border-right: 800px;
+        width: 100%;
+        color: whitesmoke;
+        bottom: 0;
+    }
+    
+    hr {
+        width: 500px;
+        color: rebeccapurple;
+        background-color: rosybrown;
+    }
+</style>
+
+
+<body>
+
+
+
+    <table>
+
+        <div class="topnav" id="sidenav" style=margin:-10px>
+            <a class="active" href="#Home" style="padding:33px;">Home</a><a class="closebtn" href=javascript:void(0) onclick="closebtn(this)" style=background-color:red>&times;</a><br><br><br></br>
+            </br>
+            <a href="slides.html" style="padding:33px;" onclick="">Our Vision</a><br></br>
+            </br>
+            </br>
+            <a href="frabics.html" style="padding:33px;">Fabrics</a><br><br>
+            </br>
+            </br>
+            <a href="Contact.html" style="padding:33px;">Contact</a><br><br><br></br>
+            </br>
+            </br>
+            <a href="contact.html" style="padding-right:800000px; margin-right:50px;"><img src="sofa1.jpg"></a>
+
+        </div>
+
+        <th>
+            <div class="container" id="contain" onclick="ma(this)">
+
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <p class="under the bars"></p>
+        </th>
+
+        <th>
+            <center>
+                <p></p>
+            </center>
+        </th>
+        <th>
+            <td style=content:center> <img class="bar4" src="logo2.jpg" style=margin-left:869px>
+        </th>
+
+    </table>
+    <br></br>
+
+    <center><img width="1000%" height="50%" src="home.png" class="p2" id="p2"></center>
+    <br></br>
+
+    <table class="t2">
+        <center>
+            <h1 id="p3">What we DO:</h1>
+            <hr id="hr1" class="hr1"></hr>
+            <center>
+                <br>
+                </br>
+                <tr>
+
+
+                    <th>
+                        <div class="card card1 "></div>
+                    </th>
+                    <th>
+                        <div class="card card2"></div>
+                    </th>
+                    <th>
+                        <div class="card card3"></div>
+                    </th>
+                    <tr>
+
+                        <td>
+                            <h5 class="L3">Re-foam</h5>
+                        </td>
+                        <td>
+                            <h5 class="L2">Repairs</h5>
+                        </td>
+                        <td>
+                            <h5 class="L1">Re-design</h5>
+                        </td>
+
+                    </tr>
+
+    </table>
+
+
+    <center>
+        <h1>The Procedure:</h1>
+        <hr id="hr2" class="hr2"></hr>
+    </center>
+    <br>
+    </br>
+
+
+    <table class="t3">
+        <tr class="icons">
+            <th class="icon1">
+                <img src="contact.png" class="contact">
+                <h3>Step 1-</h3>
+                <p>Once you got in touch with Us,<br> we will arrange a inspection on the furniture,<br> based on what you would like to have as a final product.<br> We will make a Qoutation </p>
+
+            </th>
+            <th class="icon3"><img src="alter.png" class="alter">
+                <h3>Step 2-</h3>
+                <p>Perhaps if you would like to change the style or alteration of the height or any kind of repair,<br> we can help based on your needs and final product </p>
+            </th>
+            <th class="icon3"><img src="location.jpg" class="location">
+                <h3>Step 3-</h3>
+                <p>Once you have decide on the fabric and any alteration you would like,<br> we can organise a free pickup from your location</p>
+            </th>
+            <th class="icon4 "><img src="Making.jpg" class="Making">
+                <h3>Step 4-</h3>
+                <p>Once the furniture is in our shop it will be completely reupholstered accordingly to your requirements</p>
+            </th>
+            <th class="icon5"><img src="thumbs.png" class="thumbs">
+                <h3>Step 5-</h3>
+                <p>When the work has been done it will then delivered back to you at your convenience </p>
+            </th>
+            <th class="icon6"><img src="credit.png" class="credit">
+                <h3>Step 6-</h3>
+                <p>Payements plans can also be done at an installment plan while <br>the work is being done but full amount must be fulfilled by the delivery day. </p>
+            </th>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+
+    </table>
+
+
+    <br></br>
+
+
+
+    <DIV>
+        <center>
+
+            <H1>WHERE WE ARE BASED</H1>
+        </center>
+        <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1801.7376773274302!2d28.103115369439195!3d-26.108026056896268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d50f9a6e79b%3A0xfc6007899e89fe0!2sAmbrosina%20Construction%20and%20Projects!5e0!3m2!1sen!2sza!4v1623775875121!5m2!1sen!2sza"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+		 
+		 </iframe>
+    </DIV>
+
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div class="footer" style=background-color:tomato>
+        <p>Hello</p>
+    </div>
+
+</body>
+
+
+
+</html>
